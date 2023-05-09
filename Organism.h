@@ -10,8 +10,10 @@ Organism is an abstract base class representing the common behavior of organisms
 template<typename T>
 class Organism {
 public:
-    virtual ~Organism() = default;
+    virtual ~Organism() {}
     virtual void move() = 0;
+    virtual void breed() = 0;
+    virtual void starve() {}
 };
 
 #endif // ORGANISM_H
